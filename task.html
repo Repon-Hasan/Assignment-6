@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="mt-9 mx-12">
+  <div class="nav">
+    <div class="nav shadow-sm  rounded-md flex justify-between">
+        <div class="left flex gap-6 py-6 px-8  ">
+             <img src="./assets/logo.png" alt="">
+             <h1 class="text-2xl mt-3">Dev <span class="font-bold">Board</span></h1>
+        </div>
+        <div class="right py-6 px-8 flex gap-4">
+             <div class="task-cont flex gap-2 ">
+                <img class="p-3" src="./assets/checkbox.png" alt="">
+                <p class="text-3xl py-2 pr-3" id="completeTask">16</p>
+             </div>
+    
+             <div class="theme-btn mt-2">
+                <img id="theme-btn" src="./assets/theme-btn.png" alt="">
+             </div>
+  </div>
+    </div>
+   </div>
+
+<div class="main-section flex">
+  <div class="w-[72%] inform mt-4  ">
+    
+    <div class="menu flex border-b-2 border-gray-300 border-dashed  ">
+      <div class=" mt-5 px-6 flex gap-6">
+    
+        <div class="task-check mt-4 flex gap-3  w-auto rounded-xl mb-4">
+    
+        <div class="check-image ">
+            <img class="bg-white border p-2 rounded-full mt-5 ml-4" src="./assets/checkbox.png" alt="">
+        </div>
+    
+          <div>
+            <p class="pr-5 pt-5 text-sm text-gray-400">Task Assigned</p>
+            <p class="font-bold text-3xl pl-6" id="task-remaining">6</p>
+          </div>
+        </div>
+    
+    
+        <div class="discover mt-5 pl-6 flex gap-8 h-auto mb-3" id="update">
+            <div class="info-image px-2">
+             <img class="py-1" src="./assets/board.png" alt="">
+            </div>
+            <div class="content">
+                <p class="text-white text-2xl mt-6 pr-4 ">Discover Something New Today!</p>
+            </div>
+     </div>
+     <div class="task-check mt-4 flex gap-3  w-auto rounded-xl mb-4">
+    
+        <div class="check-image ">
+            <img class="bg-white border p-2 rounded-full mt-5 ml-4" src="./assets/calender.png" alt="">
+        </div>
+        
+          <div id="date-time">
+            <p class="pr-5 pt-5 text-xl " id="day" ></p>
+            <p class="font-bold text-md pr-4 " id="date"></p>
+          </div>
+        </div>
+     
+      
+    </div>
+    
+    </div>
+    
+    
+    
+    <div class="cards flex pr-6 first-row mt-3 ">
+
+      <div class="card ml-5 rounded-xl w-1/3 mb-3">
+        <div class="card-shopease">
+        <div class="pt-3 ml-4">
+          <p class="  py-2 px-1 rounded-md title-1 w-2/6 ">ShopeEase</p>
+        </div>
+      
+          <h1 class=" ml-4 my-2 text-xl font-semibold " id="title1">Fix Mobile Button Issue</h1>
+          <p class="bg-white text-gray-300 p-3 rounded-lg mx-4 w-auto ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</p>
+      
+         <div class="flex  my-3 mt-4 ml-4 pb-4 justify-between">
+         <div>
+          <p>Deadline</p>
+          <p class="font-bold text-md pr-4 " id="date1"></p>
+         </div>
+          <button class="c1-btn py-2 px-3 mr-3" id="c1-btn">completed</button>
+      
+         </div>
+        </div>
+      
+      
+      </div>
+
+
+      <div class="card ml-5 rounded-xl w-1/3 mb-3">
+        <div class="card-shopease">
+        <div class="pt-3 ml-4">
+          <p class="  py-2 px-1 rounded-md title-1 w-2/6 ">CloudSync</p>
+        </div>
+      
+          <h1 class=" ml-4 my-2 text-xl font-semibold " id="title2">Add Dark Mode</h1>
+          <p class="bg-white text-gray-300 p-3 rounded-lg mx-4 w-auto ">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
+            and ensure onClick works properly</p>
+      
+         <div class="flex  my-3 mt-4 ml-4 pb-4 justify-between">
+         <div>
+          <p>Deadline</p>
+          <p class="font-bold text-md pr-4 " id="date2"></p>
+         </div>
+          <button class="c1-btn py-2 px-3 mr-3" id="c2-btn">completed</button>
+      
+         </div>
+        </div>
+      
+      
+      </div>
+
+      <div class="card ml-5 rounded-xl w-1/3 mb-3">
+        <div class="card-shopease">
+        <div class="pt-3 ml-4">
+          <p class="  py-2 px-1 rounded-md title-1 w-2/6 ">SwiftPay</p>
+        </div>
+      
+          <h1 class=" ml-4 my-2 text-xl font-semibold " id="title3">Optimize  Home page </h1>
+          <p class="bg-white text-gray-300 p-3 rounded-lg mx-4 w-auto ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</p>
+      
+         <div class="flex  my-3 mt-4 ml-4 pb-4 justify-between">
+         <div>
+          <p>Deadline</p>
+          <p class="font-bold text-md pr-4 " id="date3"></p>
+         </div>
+          <button class="c1-btn py-2 px-3 mr-3" id="c3-btn">completed</button>
+      
+         </div>
+        </div>
+      
+      
+      </div>
+
+    </div>
+
+
+
+
+    <div class="cards flex pr-6 second-row ">
+
+      <div class="card ml-5 rounded-xl w-1/3 mb-3">
+        <div class="card-shopease">
+        <div class="pt-3 ml-4">
+          <p class="  py-2 px-1 rounded-md title-1 w-2/6 ">Meta</p>
+        </div>
+      
+          <h1 class=" ml-4 my-2 text-xl font-semibold " id="title4">Add new emoji 🤲</h1>
+          <p class="bg-white text-gray-300 p-3 rounded-lg mx-4 w-auto ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</p>
+      
+         <div class="flex  my-3 mt-4 ml-4 pb-4 justify-between">
+         <div>
+          <p>Deadline</p>
+          <p class="font-bold text-md pr-4 " id="date4"></p>
+         </div>
+          <button class="c1-btn py-2 px-3 mr-3" id="c4-btn">completed</button>
+      
+         </div>
+        </div>
+      
+      
+      </div>
+
+
+      <div class="card ml-5 rounded-xl w-1/3 mb-3">
+        <div class="card-shopease">
+        <div class="pt-3 ml-4">
+          <p class="  py-2 px-1 rounded-md title-1 w-2/6 ">Google LLC</p>
+        </div>
+      
+          <h1 class=" ml-4 my-2 text-xl font-semibold " id="title5">Integrate OpenAI API </h1>
+          <p class="bg-white text-gray-300 p-3 rounded-lg mx-4 w-auto ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</p>
+      
+         <div class="flex  my-3 mt-4 ml-4 pb-4 justify-between">
+         <div>
+          <p>Deadline</p>
+          <p class="font-bold text-md pr-4 " id="date5"></p>
+         </div>
+          <button class="c1-btn py-2 px-3 mr-3" id="c5-btn">completed</button>
+      
+         </div>
+        </div>
+      
+      
+      </div>
+
+      <div class="card ml-5 rounded-xl w-1/3 mb-3">
+        <div class="card-shopease">
+        <div class="pt-3 ml-4">
+          <p class="  py-2 px-1 rounded-md title-1 w-2/6 ">Glassdoar</p>
+        </div>
+      
+          <h1 class=" ml-4 my-2 text-xl font-semibold " id="title6">Improve Job searching  </h1>
+          <p class="bg-white text-gray-300 p-3 rounded-lg mx-4 w-auto ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</p>
+      
+         <div class="flex  my-3 mt-4 ml-4 pb-4 justify-between">
+         <div>
+          <p>Deadline</p>
+          <p class="font-bold text-md pr-4 " id="date6"></p>
+         </div>
+          <button class="c1-btn py-2 px-3 mr-3" id="c6-btn">completed</button>
+      
+         </div>
+        </div>
+      
+      
+      </div>
+
+    </div>
+
+
+
+
+
+      </div> 
+    
+    
+    
+    
+
+    <div class="right-part mt-5 ml-6  w-[380px] ">
+
+    <div class="border-b-2 border-gray-300 border-dashed">
+      <div class="flex px-28 gap-2 mt-6">
+        <img class="" src="./assets/activity.png" alt="">
+        <h1 class="text-xl font-semibold">Activity Log</h1>
+      </div>
+     
+       <button class="clear-btn py-1 px-3 mt-4 mx-32 mb-3" id="clear">Clear History</button>
+    </div>
+
+       <div id="add-data">
+
+       </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+<script src="./javascript/theme.js"></script>
+<script src="./javascript/date.js"></script>
+<script src="./javascript/information_file.js"></script>
+<script src="./javascript/btn.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.task-cont{
+    border-radius: 32px;
+
+background: rgb(244, 247, 255);
+}
+.task-check,.bg{
+    background: rgb(244, 247, 255);
+}
+.nav,.inform,.right-part {
+    border-radius: 16px;
+
+background: rgb(255, 255, 255);
+}
+.q{
+    background: rgb(255, 255, 255);
+}
+body,.card{
+    background: rgb(244, 247, 255);
+}
+.discover{
+    border-radius: 12px;
+
+background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%,rgb(108, 127, 250) 52.66%,rgb(155, 168, 248) 99.733%);
+}
+.c1-btn,.clear-btn,.back-btn{
+    border-radius: 8px;
+
+
+background: rgb(55, 82, 253);
+}
+
+/* .task-check{
+    width: 34px;
+height: 34px;
+
+} */
